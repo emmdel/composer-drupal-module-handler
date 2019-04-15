@@ -1,0 +1,32 @@
+{
+    "name": "manubing/composer-drupal-module-handler",
+    "type": "composer-plugin",
+    "description": "Tries to properly uninstall Drupal modules before removing them.",
+    "keywords": ["drupal","composer"],
+    "license": "MIT",
+    "homepage": "https://github.com/manubing/composer-drupal-module-handler",
+    "require-dev": {
+        "composer/composer": "^1.6"
+    },
+    "authors": [
+        {
+            "name": "Emmanuel B.",
+            "email": "emmanuel.b@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/manubing/composer-drupal-module-handler/issues"
+    },
+    "require": {
+        "composer-plugin-api": "^1.1",
+        "drupal/core": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "manubing\\DrupalModuleHandler\\": "src/"
+        }
+    },
+    "extra": {
+        "class": "manubing\\DrupalModuleHandler\\Plugin"
+    }
+}
