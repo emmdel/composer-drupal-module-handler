@@ -7,6 +7,8 @@ Automatically uninstall a Drupal module before removing it with Composer
 This composer-plugin contains a plugin witch tries to properly uninstall a Drupal module before Composer attempts to remove it.
 
 > This plugin is intended to be used with a composer-managed Drupal project, eg: [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project)
+ 
+It should eliminate the need of two-steps uninstall/removing process.
 
 # How it works
 
@@ -29,8 +31,8 @@ No configuration required 🎊
 
 If no configuration is provided, this package will use default values matching [drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project):
 
-- Default value of Drupal `app_root` is `{COMPOSER_DIR}/../web`
-- Default value of Drupal `site_path` is `{app_root}/sites/default`
+- Drupal `app_root` defaults to `{COMPOSER_DIR}/../web`
+- Drupal `site_path` defaults to `{app_root}/sites/default`
 
 However, if your project have a different directory structure, use the `composer.json` `extra` section:
 
@@ -47,4 +49,8 @@ However, if your project have a different directory structure, use the `composer
 
 # Note
 
-This plugin does not currently support multi-sites projects.
+This plugin does not currently support [multisites](https://www.drupal.org/docs/8/multisite) projects.
+
+# Credits
+
+* Supporting organization : [Accelys](https://www.drupal.org/accelys)
