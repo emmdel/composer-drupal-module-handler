@@ -18,8 +18,8 @@
         "issues": "https://github.com/manubing/composer-drupal-module-handler/issues"
     },
     "require": {
-        "composer-plugin-api": "^1.1",
-        "drupal/core": "^8.0"
+        "composer-plugin-api": "^1.1 || ^2.0",
+        "drupal/core": "^8.0 || ^9.0"
     },
     "autoload": {
         "psr-4": {
